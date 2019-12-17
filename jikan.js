@@ -24,7 +24,7 @@
         global("#meta_mal_api_button").attr("disabled", true).html("Please wait...");
         global("#spinner").addClass("is-active");
         global.ajax({
-            url: "https://api.jikan.moe/anime/" + id,
+            url: "https://api.jikan.moe/v3/anime/" + id,
             method: "GET",
             dataType: "JSON",
             beforeSend: function(){
